@@ -1,0 +1,200 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  DataPipeline = dmPipelines.EigeneSchule
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Zg_Kopf ab 2006-08_EHK.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 0
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 0
+  PrinterSetup.mmMarginTop = 0
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  Template.FileName = 'N:\SchILD-Reports\Subreports\Zg_Kopf ab 2006-08_EHK.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  CachePages = True
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.01'
+  mmColumnWidth = 0
+  DataPipelineName = 'EigeneSchule'
+  object ppDetailBand24: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 35100
+    mmPrintPosition = 0
+    object ppLabel53: TppLabel
+      UserName = 'Logotext_Zeugniskopf'
+      CharWrap = True
+      AutoSize = False
+      Caption = 'Logotext'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Minion'
+      Font.Size = 15
+      Font.Style = []
+      Transparent = True
+      WordWrap = True
+      mmHeight = 15081
+      mmLeft = 47096
+      mmTop = 4233
+      mmWidth = 80433
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppRichText1: TppRichText
+      UserName = 'rtRechts'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'News Gothic MT'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Caption = 'rtRechts'
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 27781
+      mmLeft = 147000
+      mmTop = 0
+      mmWidth = 50006
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppDBImage1: TppDBImage
+      UserName = 'DBImage1'
+      AlignHorizontal = ahCenter
+      AlignVertical = avCenter
+      MaintainAspectRatio = False
+      Stretch = True
+      DataField = 'SchulLogo'
+      DataPipeline = dmPipelines.EigeneSchule
+      GraphicType = 'AutoDetect'
+      ParentDataPipeline = False
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 19050
+      mmLeft = 22490
+      mmTop = 0
+      mmWidth = 19050
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppShape1: TppShape
+      UserName = 'shLogo'
+      Pen.Color = clWhite
+      mmHeight = 20000
+      mmLeft = 17727
+      mmTop = 0
+      mmWidth = 3704
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object raCodeModule24: TraCodeModule
+    ProgramStream = {
+      01060F547261436F6E737450726F6772616D094368696C645479706502120B50
+      726F6772616D4E616D650609436F6E7374616E74730B50726F6772616D547970
+      65070B747450726F63656475726506536F75726365065E70726F636564757265
+      20436F6E7374616E74733B0D0A636F6E73740D0A42455F56657273696F6E203D
+      202756315F30312020762E30362E31322E32303133202031383A3030273B0D0A
+      20200D0A0D0A626567696E0D0A0D0A656E643B0D0A084361726574506F730102
+      010201000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+      616D65061D4C6F676F746578745F5A6575676E69736B6F70664F6E4765745465
+      78740B50726F6772616D54797065070B747450726F63656475726506536F7572
+      636506B470726F636564757265204C6F676F746578745F5A6575676E69736B6F
+      70664F6E476574546578742876617220546578743A20537472696E67293B0D0A
+      766172204C6F676F54657874203A20537472696E6720203B0D0A0D0A62656769
+      6E0D0A20204C6F676F546578743A3D20536368756C7465787428274C31272920
+      2B2063687228313329202B20536368756C7465787428274C3227293B0D0A2020
+      546578743A3D204C6F676F546578743B0D0A656E643B0D0A0D436F6D706F6E65
+      6E744E616D6506144C6F676F746578745F5A6575676E69736B6F706609457665
+      6E744E616D6506094F6E47657454657874074576656E74494402350843617265
+      74506F730102010201000001060F5472614576656E7448616E646C65720B5072
+      6F6772616D4E616D65060F72745265636874734F6E5072696E740B50726F6772
+      616D54797065070B747450726F63656475726506536F75726365068370726F63
+      65647572652072745265636874734F6E5072696E743B0D0A626567696E0D0A20
+      2072745265636874732E52696368746578743A3D536368756C7465787428275A
+      4D3127292B636872283133292B536368756C7465787428275A4D3227292B6368
+      72283133292B536368756C7465787428275A4D3327293B0D0A656E643B0D0A0D
+      436F6D706F6E656E744E616D6506087274526563687473094576656E744E616D
+      6506074F6E5072696E74074576656E7449440220084361726574506F73010201
+      0202000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+      6D65060D73684C6F676F4F6E5072696E740B50726F6772616D54797065070B74
+      7450726F63656475726506536F75726365067270726F6365647572652073684C
+      6F676F4F6E5072696E743B0D0A626567696E0D0A2F2F73686F776D6573736167
+      65282773684C6F676F4F6E5072696E743A207342696C646D61726B6544727563
+      6B656E3D27202B207342696C646D61726B65447275636B656E293B0D0A0D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D65060673684C6F676F094576656E
+      744E616D6506074F6E5072696E74074576656E7449440220084361726574506F
+      730102030203000001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D65061344657461696C416674657247656E657261746506536F7572
+      63650C4801000070726F6365647572652044657461696C416674657247656E65
+      726174653B0D0A626567696E0D0A20202F2F73686F776D657373616765282744
+      6574416674657247656E3A207342696C646D61726B65447275636B656E3D2720
+      2B207342696C646D61726B65447275636B656E293B0D0A20206966207342696C
+      646D61726B65447275636B656E3D274A27202F2F7342696C646D61726B654472
+      75636B656E207769726420696D205265706F727420696E20476C6F62616C6556
+      61726961626C656E466573746C6567656E20646566696E696572740D0A202020
+      207468656E204442496D616765312E56697369626C653A3D74727565202F2F73
+      684C6F676F2E57696474683A3D330D0A20202020656C7365204442496D616765
+      312E56697369626C653A3D66616C73653B202F2F73684C6F676F2E5769647468
+      3A3D32323F3F3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644
+      657461696C094576656E744E616D65060D416674657247656E65726174650745
+      76656E7449440219084361726574506F730102050203000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList6: TppParameterList
+  end
+end
